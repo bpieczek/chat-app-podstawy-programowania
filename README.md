@@ -208,11 +208,11 @@ make
 telnet localhost 55555
 ```
 
-## Łączenie z serwerem online
+## 🛜 Łączenie z serwerem online
 
 Serwer postawiony jest na Oracle Cloud i dostępny publicznie pod adresem 130.162.247.29 i portem 55555. Przy łaczeniu z nim zaleca się:
 
-### Dla systemu Linux
+### 🐧 Dla systemu Linux
 
 Użyj natywnego klienta Telnet w terminalu:
 
@@ -220,20 +220,20 @@ Użyj natywnego klienta Telnet w terminalu:
 telnet 130.162.247.29 55555
 ```
 
-### Dla systemu Windows
+### 🪟 Dla systemu Windows
 
 Ze względu na ograniczenia standardowego klienta Telnet w Windowsie, zalecane są alternatywne rozwiązania:
 
-#### 1. PuTTY
+#### 🖥️ 1. PuTTY
 
-1. Pobierz i zainstaluj [PuTTY](https://www.putty.org/)
+1. Pobierz i zainstaluj [PuTTY](https://www.putty.org/) 📥
 2. Konfiguracja:
    - **Host Name**: `130.162.247.29`
    - **Port**: `55555`
    - **Connection type**: `Raw`
 3. Kliknij `Open` aby połączyć
 
-#### 2. Netcat
+#### 🔌 2. Netcat
 
 1. Pobierz [Netcat dla Windows](https://eternallybored.org/misc/netcat/)
 2. Uwaga wiele antywirusów wykrywa program jako szkodliwy jednak jest on bezpieczny.
@@ -243,7 +243,7 @@ Ze względu na ograniczenia standardowego klienta Telnet w Windowsie, zalecane s
 nc.exe 130.162.247.29 55555
 ```
 
-#### 3. Windows Subsystem for Linux (WSL)
+#### 🐧🔮 3. Windows Subsystem for Linux (WSL)
 
 1. Zainstaluj [WSL](https://learn.microsoft.com/pl-pl/windows/wsl/install)
 2. Uruchom Ubuntu i zainstaluj Telnet jeśli go nie ma:
@@ -258,7 +258,7 @@ sudo apt update && sudo apt install telnet
 telnet 130.162.247.29 55555
 ```
 
-Klient Telnet w Windows może mieć ograniczenia w interakcji z aplikacjami czatu. Powyższe alternatywy zapewnią pełną funkcjonalność.
+💡 Klient Telnet w Windows może mieć ograniczenia w interakcji z aplikacjami czatu. Powyższe alternatywy zapewnią pełną funkcjonalność. Jeśli masz problemy, napisz! 🤝😊
 
 ## 📜 Podsumowanie
 
