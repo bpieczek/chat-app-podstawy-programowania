@@ -62,7 +62,7 @@ graph TD
 
 _Centralny moduł zarządzający całym systemem_
 
-````cpp
+```cpp
 class ChatServer {
 public:
     ChatServer(int port);  // Konstruktor inicjalizujący port
@@ -76,7 +76,7 @@ private:
     std::map<std::string, std::shared_ptr<ClientHandler>> nicknames_;  // Mapowanie nicków
     std::atomic<bool> running_;  // Flaga działania serwera
     Logger<std::string> logger_;  // System logowania
-
+```
 ### 📱 Klasa `ClientHandler`
 *Obsługa indywidualnego połączenia klienta*
 ```cpp
@@ -94,7 +94,7 @@ private:
     ChatServer* server_;    // Referencja do głównego serwera
     std::unique_ptr<std::thread> thread_;  // Wątek obsługi
     bool active_;           // Status aktywności
-````
+```
 
 ### ✉️ Klasa `Message`
 
